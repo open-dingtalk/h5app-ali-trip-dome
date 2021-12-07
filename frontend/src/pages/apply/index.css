@@ -1,0 +1,113 @@
+.apply {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    overflow: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.form {
+    width: 100%;
+    margin-top: 45px;
+    padding-top: 20px;
+}
+
+.btns {
+    display: flex;
+}
+.submit_view {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 96px;
+    background-color: #fff;
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(27.1828px);
+}
+
+.dip {
+    height: 110px;
+    background: #F7F7F7;
+}
+
+.btn {
+    height: 50px;
+    margin: 10px 15px;
+}
+
+.trip_view {}
+
+.clbz {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 15px;
+    background: #F7F7F7;
+}
+
+.clbz .container {
+    background: #fff;
+    width: 100%;
+    border-radius: 4px;
+    height: 290px;
+    padding: 19px;
+    font-style: 14px;
+}
+
+.flex {
+    display: flex;
+}
+
+.j_center {
+    justify-content: center;
+}
+
+.a_center {
+    align-items: center;
+}
+
+.j_between {
+    justify-content: space-between;
+}
+
+.m20 {
+    margin: 0 20px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt11 {
+    margin-top: 11px;
+}
+
+.ml8 {
+    margin-left: 8px;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.tips {
+    height: 117px;
+    background: #FFF7E8;
+    border-radius: 7px;
+    padding: 16px;
+    color: #D25F00;
+}

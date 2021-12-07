@@ -1,0 +1,35 @@
+.todo-detail {
+  margin-top: 45px;
+  height: calc(100% - 45px);
+}
+
+.todo-detail .adm-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 99;
+}
+
+.todo-detail .todo-detail-content {
+  width: 100%;
+}
+
+.todo-detail .adm-list-item-description {
+  text-align: left;
+}
+
+.todo-detail .adm-list-item-title {
+  text-align: left;
+}
+
+.todo-detail .adm-form-footer {
+  margin-top: 35px;
+  display: flex;
+}
+
+.todo-detail .adm-form-footer .adm-button:last-child {
+  margin-left: 20px;
+}

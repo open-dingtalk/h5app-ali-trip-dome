@@ -1,0 +1,30 @@
+.bill {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    text-align: left;
+   background: #F7F7F7;
+   height: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+}
+
+.form_bill {
+    width: 100%;
+    margin-top: 45px;
+    background: #fff;
+}
+
+.content {
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(29, 33, 41, 0.8);
+}

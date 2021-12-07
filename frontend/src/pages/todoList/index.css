@@ -1,0 +1,20 @@
+.todo-list {
+  justify-content: center;
+  margin-top: 45px;
+  background: #F7F7F7;
+  height: calc(100% - 45px);
+}
+
+.todo-list .adm-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 99;
+}
+
+.button {
+  margin-top: 16px;
+}

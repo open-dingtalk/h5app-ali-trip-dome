@@ -1,0 +1,62 @@
+.todo-card {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 12px 20px;
+  text-align: left;
+  background: #fff;
+  height: 108px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.todo-card .todo-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.todo-title img {
+  width: 15px;
+  margin-right: 8px;
+}
+
+.todo-card .user,
+.todo-card .reason {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.todo-card .user,
+.todo-card .todo-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.todo-card .reason {
+  height: 36px;
+  line-clamp: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.todo-card .btn-wrap {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+}
+
+.i_right .adm-input {
+  text-align: right;
+}
+
+.more {
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  width: 12px;
+}
