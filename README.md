@@ -1,8 +1,13 @@
-# （demo名称）
+# 阿里商旅实现费控报销demo
 
-> - （demo介绍）
-> - （demo结构）
->
+## 功能介绍
+企业开通阿里商旅，员工在企业自建应用或三方应用内提交差旅申请通过，跳转阿里商旅订购，差旅数据实时同步回应用，实现差旅全场景申请、审批、订票、报销一体化的流程，避免人工填写出错，规范整体费用支出操作
+
+## 项目结构
+
+backend：后端模块，springboot构建，钉钉接口功能包括：获取token，免登陆，创建和更新审批模板等。
+
+frontend：前端模块，react构建，场景功能包括：免登操作、展示单据详情，审批待办，发送审批消息等。
 
 
 
@@ -22,17 +27,19 @@
 
       https://developers.dingtalk.com/document/resourcedownload/http-intranet-penetration
 
-![image-20210706171740868](https://img.alicdn.com/imgextra/i4/O1CN01C9ta8k1L3KzzYEPiH_!!6000000001243-2-tps-953-517.png)
+![image-2021120201](https://z3.ax1x.com/2021/12/02/otwOot.png)
 
 
 
 配置相关权限：https://developers.dingtalk.com/document/app/address-book-permissions
 
+开通阿里商旅后，需要在后台配置发票信息和成本中心
+
 本demo使用接口相关权限：
 
-（列举该demo需要申请的权限）
+“通讯录部门信息读权限”、“通讯录部门成员读权限”、“成员信息读权限”、“企业调用接口执行审批操作的权限”、“审批流数据管理权限”、“考勤组管理权限”、“阿里商旅专用权限点”、“阿里商旅专用写入权限点”
 
-![image-20210706172027870](https://img.alicdn.com/imgextra/i3/O1CN016WCr6428wDdBhkWi6_!!6000000007996-2-tps-1358-571.png)
+![image-2021120202](https://z3.ax1x.com/2021/12/02/ot0ot0.png)
 
 ## 脚本启动（推荐）
 
@@ -90,7 +97,7 @@ dingBoot-windows.bat  # windows版本
 ### 下载本项目至本地
 
 ```shell
-git clone (demo下载地址)
+git clone https://github.com/open-dingtalk/h5app-ali-trip-dome.git
 ```
 
 ### 获取相应参数
@@ -131,9 +138,46 @@ npm run build
 
 ### 页面展示
 
-（页面截图/功能效果截图）
+操作列表
+
+![](https://img.alicdn.com/imgextra/i3/O1CN01opqTlP21ymZhoiauS_!!6000000007054-2-tps-399-268.png)
+
+差旅申请
+
+![](https://img.alicdn.com/imgextra/i2/O1CN01wTCejI1LoyE9UEl0q_!!6000000001347-2-tps-400-1607.png)
+
+待办列表
+
+![](https://img.alicdn.com/imgextra/i2/O1CN010XNrVv2AH7M2l4waR_!!6000000008177-2-tps-400-756.png)
+
+待办详情
+
+![](https://img.alicdn.com/imgextra/i4/O1CN01krD81Q1XrVoTNEUiS_!!6000000002977-2-tps-400-758.png)
+
+单据同步阿里商旅
+
+![](https://img.alicdn.com/imgextra/i4/O1CN01eOSLeT1F81OJrAk7G_!!6000000000441-2-tps-400-797.png)
+
+阿里商旅订购 
+
+![](https://img.alicdn.com/imgextra/i2/O1CN016LZmCo1mACbD9p34E_!!6000000004913-2-tps-400-797.png)
+
 
 ### **参考文档**
 
 1. 获取企业内部应用access_token，文档链接：https://developers.dingtalk.com/document/app/obtain-orgapp-token
-2. （请完善文档）
+2. 创建或更新审批模板，文档链接：https://developers.dingtalk.com/document/app/save-approval-template
+3. 创建实例，文档链接：https://developers.dingtalk.com/document/app/initiate-an-approval-process-without-a-process
+4. 更新实例状态，文档链接：https://developers.dingtalk.com/document/app/to-do-instance-status
+5. 创建待办事项，文档链接：https://developers.dingtalk.com/document/app/create-a-to-do-task
+6. 更新待办状态，文档链接：https://developers.dingtalk.com/document/app/update-to-do-task-status
+7. 获取模板code接口，文档链接：https://developers.dingtalk.com/document/app/obtains-the-template-code-based-on-the-template-name
+8. 获取待办列表，文档链接：https://developers.dingtalk.com/document/app/query-a-user-s-to-do-items
+9. 获取部门用户基础信息，文档链接：https://developers.dingtalk.com/document/app/queries-the-simple-information-of-a-department-user
+11. 审批完成通知接口，文档链接：https://open.dingtalk.com/document/orgapp-server/notice-of-approval
+12. 创建成本中心，文档链接：https://open.dingtalk.com/document/orgapp-server/new-cost-center
+13. 查询成本中心，文档链接：https://open.dingtalk.com/document/orgapp-server/query-cost-center
+14. 创建发票信息，文档链接：https://open.dingtalk.com/document/orgapp-server/new-invoice-configuration
+15. 查询发票信息，文档链接：https://open.dingtalk.com/document/orgapp-server/query-available-invoices
+16. 设置成本中心人员，文档链接：https://open.dingtalk.com/document/orgapp-server/set-up-cost-center-personnel-information
+17. 获取商旅跳转url，文档链接：https://open.dingtalk.com/document/orgapp-server/obtain-business-travel-access-addresses
